@@ -12,7 +12,7 @@ function RegisterUser() {
 
   const submit = async (e) => {
     e.preventDefault();
-    await fetch(process.env.REACT_APP_API, {
+    await fetch(process.env.REACT_APP_API_URL_USER, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

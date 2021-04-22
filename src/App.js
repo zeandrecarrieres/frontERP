@@ -21,7 +21,7 @@ function App() {
     (
         async () => {
             // const response = await fetch('http://localhost:3001/user', {
-            const response = await fetch(process.env.REACT_APP_API_URL, {
+            const response = await fetch(process.env.REACT_APP_API_URL/user, {
                 headers: {'Content-Type': 'application/json'},
                 credentials: 'include',
             })
