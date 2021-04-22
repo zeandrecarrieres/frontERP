@@ -1,0 +1,165 @@
+.logo-top {
+  width: 50%;
+  margin: 3rem 0;
+
+}
+
+.side-menu {
+  /* height: 90.5vh; */
+  margin: 3rem 0 0 3rem;
+  background: #f59709;
+  width: 10%;
+  padding: 0.1rem 1rem;
+  border-radius: 1rem 0 0 1.5rem;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 70%;
+}
+
+.side-menu ul {
+ /* display: flex;
+ flex-direction: column;
+ width: 70%; */
+  width: 80%;
+ padding: 0px;
+ 
+}
+
+.side-menu ul li {
+  flex-direction: column;
+  margin: .5rem 0;
+  
+  
+}
+
+.menu-item {
+    display: flex;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding: 0.5rem 1rem;
+  justify-content: left;
+  transition: 0.3s;
+  
+}
+
+.menu-item:hover {
+    border: 1px solid white;
+    border-radius: 1.8rem;
+  color: white;
+  background: rgba(250, 250, 250, 0.055);
+  
+}
+
+.sign-out {
+  background: #e69200;
+  border-radius: 1rem;
+  font-size: 0.6rem;
+  margin-bottom: 2rem;
+  width: 40%;
+  transition: 0.8s;
+}
+.sign-out:hover {
+  background: #e93407a1;
+  border-radius: 1rem;
+  font-size: 0.6rem;
+  margin-bottom: 2rem;
+  width: 60%;
+}
+
+.menu-container img {
+  width: 1rem;
+  margin-right: 1rem;
+  /* padding-left: 2rem; */
+}
+
+@media only screen and (max-width: 360px){
+  .logo-top{
+    margin: 1rem 0;
+  }
+  
+  .side-menu {
+    height: 100vh;
+    margin: 0;
+    background: #f59709;
+    width: 40%;
+    padding: 0.1rem 1rem;
+    border-radius: 1rem 0 0 1.5rem;
+}
+.side-menu ul li{
+  margin: 0;
+}
+
+.form-line {
+  flex-direction: column;
+}
+
+.add-client {
+  height: 100vhvh;
+  display: initial;
+  /* flex: 1 1;
+  justify-content: center; */
+  margin-top: 0rem;
+}
+}
+
+
+
+@media only screen and (max-width: 1200px){
+  /*Tablets [601px -> 1200px]*/
+
+  .side-menu {
+    margin: 1rem 0 0 1rem;
+  }
+
+  .side-menu ul {
+    width: 98%;
+  }
+
+  .menu-item {
+    padding: 0.5rem 0rem;
+  }
+
+  .menu-item:hover {
+    border: 1px solid white;
+    border-radius: 1.8rem;
+  color: white;
+  background: rgba(250, 250, 250, 0.055);
+  
+}
+}
+
+@media only screen and (max-width: 957px){
+  .side-menu {
+   
+    width: 15%;
+   
+  }
+  
+  .logo-top {
+    width: 80%;
+  }
+  
+  .menu-container img{
+      display: none;
+    }
+
+  .menu-item{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+
+  .list-container li :first-child  {
+    display: none;
+  }
+   .list-container li :first-child  {
+    display: none;
+  }
+
+}
+

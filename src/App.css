@@ -1,0 +1,220 @@
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+* :focus {
+  outline: 0;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  font-size: .8rem;
+} 
+
+button {
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.transaction-form {
+  display: flex;
+  flex-direction: row
+}
+
+input, select, button {
+  padding: .5rem 1rem;
+  font-size: 0.8rem;
+  margin: 3px;
+  border-radius: 1rem;
+  border: 0;
+  background: #ffffff;
+  color: #959595;
+  margin:0.5rem;
+}
+
+
+input::-webkit-input-placeholder {/* Chrome/Opera/Safari/Edge */
+  color: #959595;
+}
+
+.little-field {
+  max-width: 5rem;
+}
+
+.select-field{
+  width: 20rem;
+}
+
+
+button {
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  margin: 3px;
+  border-radius: 1rem;
+  border: 0;
+  background: #f59709;
+  color: white;
+}
+
+button:hover {
+  background: #ff5e00;
+ 
+}
+
+.del-btn {
+  padding: .3rem .7rem;
+  font-size: 0.8rem;
+  background: #f52509;
+  
+  
+}
+
+.edit-btn {
+  padding: .3rem .7rem;
+  font-size: 0.8rem;
+  border-radius: 1rem;
+  background: #ffa909;
+  color: white;
+  
+}
+
+h1 {
+  color: #808080 ;
+  justify-content: flex-start;
+  font-weight: 300;
+}
+
+
+
+/* +++++++++++ CSS HOME ++++++++++++ */
+
+.home {
+  height: 91vh;
+  display: flex;
+  flex: 1;
+  justify-content:center;
+  margin-top: 3rem ;
+  flex-direction:column;
+  align-items:center;
+  background: #F5F5F5;
+}
+
+/* +++++++++++ CSS LIST PRODUCTS ++++++++++++ */
+
+.list-products {
+  height: 91vh;
+  display: flex;
+  flex: 1;
+  justify-content:center;
+  margin-top: 3rem ;
+  flex-direction:column;
+  align-items:center;
+  background: #F5F5F5;
+}
+
+/* +++++++++++ CSS ADD CLIENT ++++++++++++ */
+
+.add-client {
+  height: 91vh;
+  display: flex;
+  flex: 1;
+  justify-content:center;
+  margin-top: 3rem ;
+  flex-direction:column;
+  align-items:center;
+  background: #F5F5F5;
+}
+
+/* +++++++++++ CSS LIST PRODUCTS ++++++++++++ */
+
+.list-clients {
+  height: 91vh;
+  display: flex;
+  flex: 1;
+  justify-content:center;
+  margin-top: 3rem ;
+  flex-direction:column;
+  align-items:center;
+  background: #F5F5F5;
+}
+
+
+/* +++++++++++ CSS ADD PRODUCT ++++++++++++ */
+
+.add-product{
+  height: 91vh;
+  display: flex;
+  flex: 1;
+  justify-content:center;
+  margin-top: 3rem ;
+  flex-direction:column;
+  align-items:center;
+  background: #F5F5F5;
+}
+
+
+.transaction-item {
+  display: flex;
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.champ {
+  background: white;
+  width: 10rem;
+  margin: 2px;
+  padding: .5rem 1rem;
+
+}
+
+hr {
+  border: 1px solid rgba(177, 177, 177, 0.226);
+  margin: 1rem 0;
+}
+
+/* @media only screen and (max-width: 600px){
+	.App {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    font-size: .8rem;
+  } 
+
+  .side-menu {
+    display: flex;
+    width: 100%;
+    width: 100vw;
+    margin: 0;
+  }
+
+  .menu-container {
+    width: 100%;
+    width: 100vw;
+  }
+
+  .side-menu ul  {
+    display: flex;
+    width: 100%;
+  
+}
+} */
+
+@media only screen and (max-width: 1200px){
+  /*Tablets [601px -> 1200px]*/
+
+  .home{
+    margin-top: 1rem;
+  }
+
+  .add-transactions{
+    margin-top: 1rem;
+  }
+}

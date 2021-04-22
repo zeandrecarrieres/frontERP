@@ -1,0 +1,19 @@
+ .form-group {
+     width: 80%;     
+     
+ }
+
+ .form-group form input {
+     width: 100%;
+     
+ }
+
+ .form-group form input::-webkit-input-placeholder {/* Chrome/Opera/Safari/Edge */
+    color: #959595;
+}
+
+
+ .form-line {
+     display: flex;
+     width: 90%;
+ }
