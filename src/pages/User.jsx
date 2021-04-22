@@ -9,7 +9,7 @@ const User = () => {
     const {user, setUser} = useContext(UserContext);
     
     const logout = async () => {
-        await fetch('http://localhost:3001/user/logout', {
+        await fetch(process.env.REACT_APP_API, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             credentials: 'include',

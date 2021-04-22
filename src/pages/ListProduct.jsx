@@ -11,13 +11,13 @@ function ListProduct() {
     const [count, setCount] = useState(0);
 
     useEffect(()=>{
-        fetch('http://localhost:3001/product/')
+        fetch(process.env.REACT_APP_API)
             .then(response => response.json())
             .then(data=> setProducts(data))
     },[count])
 
 const deleteProduct = async (e) => {
-    await fetch("http://localhost:3001/product/"+e, {
+    await fetch(process.env.REACT_APP_API+e, {
         method: "DELETE",
 
     })

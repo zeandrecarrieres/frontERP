@@ -20,7 +20,8 @@ function App() {
   useEffect(()=>{
     (
         async () => {
-            const response = await fetch('http://localhost:3001/user', {
+            // const response = await fetch('http://localhost:3001/user', {
+            const response = await fetch(REACT_APP_API_URL, {
                 headers: {'Content-Type': 'application/json'},
                 credentials: 'include',
             })

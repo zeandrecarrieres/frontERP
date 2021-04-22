@@ -16,7 +16,7 @@ const Login = () => {
     e.preventDefault();
     
 
-    await fetch("http://localhost:3001/user/login", {
+    await fetch(process.env.REACT_APP_API, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
@@ -26,7 +26,7 @@ const Login = () => {
       }),
     });
 
-    const response = await fetch("http://localhost:3001/user", {
+    const response = await fetch(process.env.REACT_APP_API, {
       headers: { "Content-Type": "application/json" },
       credentials: "include",
     });

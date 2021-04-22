@@ -40,7 +40,8 @@ function AddTransaction() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:3001/product/")
+    fetch(process.env.REACT_APP_API)
+    // fetch("http://localhost:3001/product/")
       .then((response) => response.json())
       .then((data) => SetOptions(data))
       .catch((error) => console.log(error));

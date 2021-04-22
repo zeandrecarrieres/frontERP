@@ -15,7 +15,7 @@ function Transactions({addCount}) {
 
 
   useEffect(() => {
-    fetch("http://localhost:3001/transaction/")
+    fetch(process.env.REACT_APP_API)
       .then((response) => response.json())
       .then((data) => setTransactions(data));
   },[addCount]);
