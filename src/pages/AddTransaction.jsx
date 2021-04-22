@@ -20,7 +20,8 @@ function AddTransaction() {
     if (type =="" || product==""){
       alert('Select a  Transaction Type and Product !')
     } else {
-      await fetch("http://localhost:3001/transaction", {
+      await fetch(process.env.REACT_APP_API, {
+      // await fetch("http://localhost:3001/transaction", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
