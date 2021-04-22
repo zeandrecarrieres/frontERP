@@ -26,7 +26,7 @@ const Login = () => {
       }),
     });
 
-    const response = await fetch(process.env.REACT_APP_API, {
+    const response = await fetch(process.env.REACT_APP_API_URL, {
       headers: { "Content-Type": "application/json" },
       credentials: "include",
     });

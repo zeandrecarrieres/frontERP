@@ -17,7 +17,7 @@ function ListProduct() {
     },[count])
 
 const deleteProduct = async (e) => {
-    await fetch(process.env.REACT_APP_API+e, {
+    await fetch(process.env.REACT_APP_API_URL+e, {
         method: "DELETE",
 
     })

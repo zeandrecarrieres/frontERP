@@ -15,7 +15,7 @@ function Transactions({addCount}) {
 
 
   useEffect(() => {
-    fetch(process.env.REACT_APP_API)
+    fetch(process.env.REACT_APP_API_URL)
       .then((response) => response.json())
       .then((data) => setTransactions(data));
   },[addCount]);

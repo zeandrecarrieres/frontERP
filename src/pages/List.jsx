@@ -9,7 +9,7 @@ function List() {
     const [count, setCount] = useState(0);
 
     useEffect(()=>{
-        fetch(process.env.REACT_APP_API)
+        fetch(process.env.REACT_APP_API_URL)
             .then(response => response.json())
             .then(data=> setClients(data))
     },[count])

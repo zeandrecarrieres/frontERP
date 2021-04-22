@@ -20,7 +20,7 @@ function AddTransaction() {
     if (type =="" || product==""){
       alert('Select a  Transaction Type and Product !')
     } else {
-      await fetch(process.env.REACT_APP_API, {
+      await fetch(process.env.REACT_APP_API_URL, {
       // await fetch("http://localhost:3001/transaction", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -40,7 +40,7 @@ function AddTransaction() {
   };
 
   useEffect(() => {
-    fetch(process.env.REACT_APP_API)
+    fetch(process.env.REACT_APP_API_URL)
     // fetch("http://localhost:3001/product/")
       .then((response) => response.json())
       .then((data) => SetOptions(data))
